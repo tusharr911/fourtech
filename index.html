@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo form</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="demo-form-container">
+      <div class="thank-you" style="display: none" id="thank-you-message">
+        <p>Thank you for your submission.</p>
+      </div>
+
+      <h3 class="form-title" id="form-title">Setup a Demo</h3>
+      <p class="form-title-sub" id="form-subtitle">
+        Free 30 Min Website Monetization Consulting Included
+      </p>
+
+      <form action="#" method="POST" class="demo-form" id="demo-form">
+        <div class="form-row">
+          <label for="first-name">First Name<span>*</span></label>
+          <input type="text" id="first-name" name="firstname" required />
+        </div>
+        <div class="form-row">
+          <label for="email">Work Email<span>*</span></label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-row">
+          <label for="phone">Phone<span>*</span></label>
+          <input type="text" id="phone" name="phone" minlength="7" required />
+        </div>
+        <div class="form-row">
+          <label for="website">Website<span>*</span></label>
+          <input type="text" id="website" name="website" required />
+        </div>
+        <div class="form-row">
+          <label for="revenue">Monthly Revenue (USD)<span>*</span></label>
+          <select id="revenue" name="monthly_revenue" required>
+            <option value="">Select any option</option>
+            <option value="less_than_1000">Less than 1,000 USD</option>
+            <option value="1000_to_2999">1,000 - 2,999 USD</option>
+            <option value="3000_to_10000">3,000 - 10,000 USD</option>
+            <option value="10000_to_40000">10,000 - 40,000 USD</option>
+            <option value="more_than_40000">More than 40,000 USD</option>
+          </select>
+        </div>
+        <div class="submit-btn-wrap">
+          <button type="submit" class="submit-btn">GET A FREE DEMO</button>
+        </div>
+        <p class="form-footer" id="form-footer">
+          By signing up you agree to our <a href="#">Terms</a> and
+          <a href="#">Privacy Policy</a>.
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
